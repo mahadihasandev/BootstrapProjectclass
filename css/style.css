@@ -1,19 +1,45 @@
-
-
+/*********Common Css*********/
+    a{
+        text-decoration: none;
+        
+    }
 /*********Navbar part start*********/
-
+nav{
+    background:#1C1E53;
+    padding: 16px 0!important;
+}
 .nav-link {
     padding: 0px !important;
-    color: #FFFFFF;
+    color: #BBBBCB;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: white;
 }
 
-.navbar{
-    background:#1C1E53;
-}
 
 .navbar-nav{
     column-gap: 30px;
     
+}
+
+.navbar-button a{
+    border: #F4F6FC33 solid;
+    
+    padding: 16px 48px;
+    border-radius: 41px;
+    color: #FFFFFF;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .5s;
+
+}
+.navbar-button a:hover{
+    background: #FCD980;
+    color: #1C1E53;
 }
 
 /*********Navbar part End*********/
