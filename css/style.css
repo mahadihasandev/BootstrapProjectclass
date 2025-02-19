@@ -1,0 +1,19 @@
+
+
+/*********Navbar part start*********/
+
+.nav-link {
+    padding: 0px !important;
+    color: #FFFFFF;
+}
+
+.navbar{
+    background:#1C1E53;
+}
+
+.navbar-nav{
+    column-gap: 30px;
+    
+}
+
+/*********Navbar part End*********/
