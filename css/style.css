@@ -1,46 +1,813 @@
-/*********Common Css start*********/
-    a{
-        text-decoration: none;
-        
-    }
-/*********Common Css end*********/
-/*********Navbar part start*********/
-nav{
-    background:#1C1E53;
-    padding: 16px 0!important;
+* {
+    margin: 0;
 }
-.nav-link {
-    padding: 0px !important;
-    color: #BBBBCB;
+
+
+/* ======== Commone CSS Start ========== */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.description {
     font-family: "Poppins", serif;
     font-size: 16px;
     font-weight: 500;
-}
-.nav-link:hover{
-    color: white;
+    line-height: 28px;
 }
 
-
-.navbar-nav{
-    column-gap: 30px;
-    
+.title {
+    font-family: "Poppins", serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
 }
 
-.navbar-button a{
-    border: #F4F6FC33 solid;
-    
+.sub-title {
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.Primary_button {
+    border-radius: 40px;
     padding: 16px 48px;
-    border-radius: 41px;
-    color: #FFFFFF;
-    font-family: "Poppins", serif;
-    font-weight: 500;
     font-size: 16px;
-    transition: .5s;
-
+    font-weight: 500;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    transition: .1s;
 }
-.navbar-button a:hover{
+
+.Primary_button:hover {
+    border: 2px solid transparent;
     background: #FCD980;
     color: #1C1E53;
 }
 
-/*********Navbar part End*********/
+/* ======== Commone CSS Start ========== */
+
+/* Navbar Start */
+
+header {
+    background: #1C1E53;
+}
+
+
+
+.nav-link {
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #BBBBCB;
+    font-family: "Poppins", serif;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-nav {
+    column-gap: 32px;
+}
+
+.collapse {
+    column-gap: 48px !important;
+}
+
+
+.navbar-toggler {
+    border: 3px solid white;
+}
+
+.navbar-toggler i {
+    color: white;
+}
+
+.navbar-nav .Primary_button {
+    font-family: "Poppins", serif;
+}
+
+/* Navbar End */
+/* Hero Section Start */
+
+.banner-title {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: "Poppins", serif;
+    color: rgba(255, 255, 255, .70);
+    width: 562px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.banner .col-lg-6:first-child {
+    margin: 126px 0;
+}
+
+.banner-buttons a {
+    color: #1C1E53;
+}
+
+.banner-buttons .Primary_button:first-child {
+    background: #FCD980;
+    border: transparent;
+    font-family: "Manrope", serif;
+    border: 2px solid transparent;
+}
+
+.banner-buttons .Primary_button:first-child:hover {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+}
+
+.banner-buttons .Primary_button:first-child:hover a {
+    color: #ffffff;
+}
+
+.view_button {
+    align-items: center;
+    margin-left: 40px;
+    position: relative;
+}
+
+.view_button a,
+i {
+    color: #ffffff;
+}
+
+.view_button i {
+    position: absolute;
+    top: 40%;
+    left: 105%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.view_button:hover i {
+    top: 40%;
+    left: 120%;
+    transition: .4s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.moving_elements_container {
+    position: relative;
+}
+
+.moving_elements_container .window {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.moving_elements_container .link_line {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.moving_elements_container .html_icone {
+    position: absolute;
+    top: 420px;
+    left: 57%;
+    transform: translate(-50%);
+    animation: html 1.5s infinite alternate;
+}
+
+.moving_elements_container .folder_icone {
+    position: absolute;
+    top: 245px;
+    left: 43%;
+    transform: translate(-50%);
+    animation: html 0.8s infinite alternate;
+}
+
+.moving_elements_container .css_icone {
+    position: absolute;
+    top: 280px;
+    left: 65%;
+    transform: translate(-50%);
+    animation: html 1.0s infinite alternate;
+}
+
+.moving_elements_container .list_image {
+    position: absolute;
+    top: 330px;
+    left: 84%;
+    transform: translate(-50%);
+    animation: list 1.5s infinite alternate;
+}
+
+.moving_elements_container .edite_images {
+    position: absolute;
+    top: 230px;
+    left: 14%;
+    transform: translate(-50%);
+    animation: edit 1s infinite alternate;
+}
+
+/* Hero Section end */
+/* How we Work Section Start*/
+.how_we_work {
+    background: #F4F6FC;
+    padding: 128px 0;
+}
+
+.how_we_work .container .row .col-lg-5 .title {
+    color: #282938;
+}
+
+.how_we_work .container .row .col-lg-5 .description {
+    color: #282938a7;
+    width: 405px;
+    margin: 16px 0;
+}
+
+.how_we_work .container .row .col-lg-5 .view_button {
+    margin-left: 0;
+    position: relative;
+}
+
+.how_we_work .container .row .col-lg-5 .view_button a {
+    color: #2405F2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.how_we_work .container .row .col-lg-5 .view_button i {
+    color: #2405F2;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translateY(-50%);
+    transform: .2s;
+}
+
+.how_we_work .container .row .col-lg-5 .view_button:hover i {
+    top: 50%;
+    left: 35%;
+}
+
+.how_we_work .container .row .col-lg-7 {
+    column-gap: 22px;
+    row-gap: 48px;
+}
+
+.how_we_work .container .row .col-lg-7 .work_stages .stage {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/pointer\ 1.png);
+    position: relative;
+}
+
+.how_we_work .container .row .col-lg-7 .work_stages .stage h4 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: white;
+}
+
+.how_we_work .container .row .col-lg-7 .work_stages h3 {
+    font-family: "Poppins", serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #282938;
+    margin: 16px 0 8px 0;
+}
+
+.how_we_work .container .row .col-lg-7 .work_stages .description {
+    color: #282938a7;
+    width: 303px;
+}
+
+/* How we Work Section end */
+/* View our Project Section Start*/
+.view_our_project {
+    margin: 128px 0;
+}
+
+.view_our_project .container .project_container {
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+}
+
+.view_our_project .container .project_container .title {
+    color: #282938;
+}
+
+.view_our_project .container .project_container .view_button {
+    margin-right: 55px;
+}
+
+.view_our_project .container .project_container .view_button a {
+    color: #282938;
+}
+
+.view_our_project .container .project_container .view_button i {
+    color: #282938;
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view {
+    position: relative;
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    background-image: linear-gradient(to bottom right, #1C1E536B, #1C1E53);
+    transition: .4s;
+    padding: 312px 35px 72px 48px;
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view:hover .overly {
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    width: 313px;
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .description {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    width: 313px;
+    margin: 16px 0 40px 0;
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .view_button {
+    margin: 0;
+
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .view_button a {
+    color: #FCD980;
+
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .view_button i {
+    color: #FCD980;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+}
+
+.view_our_project .container .row .col-lg-8 .projects_view .overly .view_button:hover i {
+    left: 35%;
+
+}
+
+.view_our_project .container .row .col-lg-4 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view {
+    position: relative;
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    background-image: linear-gradient(to bottom right, #1C1E536B, #1C1E53);
+    transition: .4s;
+    padding: 129px 36px 45px 56px;
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view:hover .overly {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly .title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    width: 313px;
+    margin-bottom: 10px;
+}
+
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly .view_button {
+    margin: 0;
+
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly .view_button a {
+    color: #FCD980;
+
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly .view_button i {
+    color: #FCD980;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+}
+
+.view_our_project .container .row .col-lg-4 .projects_view .overly .view_button:hover i {
+    left: 35%;
+
+}
+
+/* View our Project Section end */
+/* Features Section Start*/
+.features {
+    background: #F4F6FC;
+    padding: 128px 0px;
+}
+
+.features .container .content {
+    width: 630px;
+    margin: 0 auto;
+}
+
+.features .container .content .title {
+    text-align: center;
+    color: #282938;
+}
+
+.features .container .content .description {
+    text-align: center;
+    color: #282938;
+}
+
+.features .container .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+    margin-top: 47px;
+}
+
+.features .container .card_container .card_box {
+    background: white;
+}
+
+.features .container .card_container .cards_content {
+    padding: 58px 32px 48px 48px;
+}
+
+.features .container .card_container .cards_content .sub-title {
+    margin-top: 22px;
+}
+
+.features .container .card_container .cards_content .description {
+    width: 324px;
+    color: #282938a7;
+    margin-top: 12px;
+}
+
+
+/* Features Section end */
+/* clienst review Section Start*/
+.clienst_review {
+    background: #F4F6FCa7;
+    padding: 128px 0px;
+}
+
+.clienst_review .container .row .col-lg-4 .title {
+    font-family: "Poppins", serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    width: 327px;
+    color: #282938;
+}
+
+.clienst_review .container .row .col-lg-4 .description {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    width: 327px;
+    color: #282938a7;
+    margin-top: 16px;
+}
+
+.clienst_review .container .row .col-lg-8 .comments {
+    font-family: "Poppins", serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #282938;
+    width: 843px;
+    margin-bottom: 48px;
+}
+
+.clienst_review .container .row .col-lg-8 .client_profile {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    column-gap: 14px;
+}
+
+.clienst_review .container .row .col-lg-8 .client_profile .img {
+    width: 52px;
+    height: 52px;
+    background-image: url(../images/client-image.png);
+}
+
+.clienst_review .container .row .col-lg-8 .client_profile .client_info .client_name {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #282938;
+}
+
+.clienst_review .container .row .col-lg-8 .client_profile .client_info .client_title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #282938;
+}
+
+/* clienst review Section end */
+/* FAQ Work Section Start*/
+.faq {
+    padding: 128px 0px;
+}
+
+/* FAQ Work Section end */
+/* Send Inquiry Section Start*/
+.send_inquiry {
+    padding: 128px 0px;
+}
+
+.send_inquiry .container {
+    height: 691px;
+    display: flex;
+}
+
+
+.send_inquiry .container .content_container {
+    position: relative;
+}
+
+
+.send_inquiry .container .content_container .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    background: rgba(28, 30, 83, 0.50);
+    padding: 96px 96px 261px 96px;
+}
+
+.send_inquiry .container .content_container .overly .title {
+    color: white;
+    line-height: 74px;
+    margin-bottom: 24px;
+}
+
+.send_inquiry .container .content_container .overly .description {
+    color: white;
+}
+
+.send_inquiry .container .inquiry_input {
+    height: 100%;
+    width: 100%;
+    background: #1C1E53;
+    padding: 96px 96px 261px 96px;
+}
+
+.send_inquiry .container .inquiry_input .sub-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: white;
+
+}
+
+.send_inquiry .container .inquiry_input .description {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.send_inquiry .container .inquiry_input .form-inputs {
+    background: transparent;
+    border: 2px solid #FFFFFF0D;
+    padding: 18px 311px 18px 32px !important;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.send_inquiry .container .inquiry_input .form-inputs::placeholder {
+    color: rgba(244, 246, 252, .50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28;
+}
+
+.send_inquiry .container .inquiry_input .form-inputs:focus {
+    border-color: #ffffffbb !important;
+}
+
+.send_inquiry .container .inquiry_input .Primary_button {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    background-color: #FCD980;
+
+}
+
+.send_inquiry .container .inquiry_input .Primary_button a {
+    color: #1C1E53;
+
+}
+
+.send_inquiry .container .inquiry_input .Primary_button:hover {
+    border: 2px solid white;
+    background: transparent;
+}
+
+.send_inquiry .container .inquiry_input .Primary_button:hover a {
+    color: white;
+}
+
+.send_inquiry .container .inquiry_input .view_button {
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.send_inquiry .container .inquiry_input .view_button i {
+    top: 20%;
+    left: 60%;
+}
+
+.send_inquiry .container .inquiry_input .view_button:hover i {
+    top: 20%;
+    left: 65%;
+}
+
+/* Send Inquiry Section end */
+/* our blog Work Section Start*/
+.our_blog {
+
+    padding: 128px 0px;
+}
+
+.our_blog .container h2 {
+    margin-bottom: 64px;
+}
+
+.our_blog .container .view_button  {
+   margin-left: 0;
+}
+.our_blog .container .view_button a {
+    font-weight: 500;
+    color: #1C1E53;
+}
+.our_blog .container .view_button i {
+    top: 20%;
+    left: 18%;
+    color: #1C1E53;
+}
+
+.our_blog .container .view_button:hover i {
+    top: 20%;
+    left: 22%;
+}
+.our_blog .container .date {
+    margin-top: 40px;
+
+}
+.our_blog .container .sub-title {
+    margin-top: 16px;
+    line-height: 36px;
+}
+.our_blog .container .description {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    color: rgba(40, 41, 56, .70);
+}
+
+/* our blog Work Section end */
+
+
+
+/* footer Section Start */
+
+footer .information {
+    padding-top: 100px;
+    background: #1C1E53;
+}
+
+
+footer section .container .row:first-child .description {
+    color: #ffffffA8;
+    width: 400px;
+    margin-top: 22px;
+}
+
+footer section .container .row:last-child .description {
+    color: #ffffffA8;
+    width: 400px;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+footer section .container .row:last-child .social_icons {
+    display: flex;
+    column-gap: 27px;
+}
+
+footer section .container .row:first-child .info {
+    background: #FCD980;
+    width: 80%;
+    padding-top: 16px;
+    padding-left: 37px;
+    column-gap: 30px;
+    margin-top: 86px;
+}
+
+footer section .container .row:first-child .info .p {
+    color: #282938A8;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+footer section .container .row:first-child .info h4 {
+    color: #282938;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    line-height: 32px;
+}
+
+footer section .container .row:last-child .title {
+    color: #ffffff;
+}
+
+.Copyright-inf .navbar-brand {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+}
+
+.Copyright-info .nav-link {
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    font-family: "Poppins", serif;
+}
+
+
+.Copyright-inf .navbar-nav {
+    column-gap: 32px;
+}
+
+/* footer Section end */
